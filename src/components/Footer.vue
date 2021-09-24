@@ -51,9 +51,6 @@ footer {
   background-color: $text-color;
   height: 127px;
 }
-div {
-  padding: 40px 1200px 0 0;
-}
 button {
   background-color: $text-color;
   color: $main-text-color;

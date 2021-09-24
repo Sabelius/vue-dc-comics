@@ -17,34 +17,42 @@
           </li>
           <li>
             <a href=""
-              ><img
-                src="../assets/img/buy-comics-merchandise.png"
-                alt="merchbuy"
-              />
+              ><div>
+                <img
+                  src="../assets/img/buy-comics-merchandise.png"
+                  alt="merchbuy"
+                />
+              </div>
               <h4>DC MERCHANDISE</h4></a
             >
           </li>
           <li>
             <a href="">
-              <img
-                src="../assets/img/buy-comics-subscriptions.png"
-                alt="subs"
-              />
+              <div>
+                <img
+                  src="../assets/img/buy-comics-subscriptions.png"
+                  alt="subs"
+                />
+              </div>
               <h4>SUBSCRIPTION</h4></a
             >
           </li>
           <li>
-            <a href=""
-              ><img
-                src="../assets/img/buy-comics-shop-locator.png"
-                alt="shop"
-              />
+            <a href="">
+              <div>
+                <img
+                  src="../assets/img/buy-comics-shop-locator.png"
+                  alt="shop"
+                />
+              </div>
               <h4>COMIC SHOP LOCATOR</h4></a
             >
           </li>
           <li>
-            <a href=""
-              ><img src="../assets/img/buy-dc-power-visa.svg" alt="visa" />
+            <a href="">
+              <div>
+                <img src="../assets/img/buy-dc-power-visa.svg" alt="visa" />
+              </div>
               <h4>DC POWER VISA</h4></a
             >
           </li>
@@ -54,25 +62,25 @@
 
     <section class="second-section">
       <nav>
-        <ul>
+        <ul class="second-ul">
           <h3>DC COMICS</h3>
           <li v-for="(link, index) in links" :key="index">
             <a>{{ link.text }}</a>
           </li>
-          <ul class="magic-ul">
+          <ul>
             <h3>SHOP</h3>
             <li v-for="(link2, index) in links2" :key="index">
               <a>{{ link2.text }}</a>
             </li>
           </ul>
         </ul>
-        <ul>
+        <ul class="second-ul">
           <h3>DC</h3>
           <li v-for="(link3, index) in links3" :key="index">
             <a>{{ link3.text }}</a>
           </li>
         </ul>
-        <ul>
+        <ul class="second-ul">
           <h3>SITES</h3>
           <li v-for="(link4, index) in links4" :key="index">
             <a>{{ link4.text }}</a>
@@ -231,6 +239,10 @@ h1 {
   list-style: none;
   padding-top: 20px;
 }
+.first-section div{
+  display: flex;
+  vertical-align: middle;
+}
 img {
   width: 60px;
 }
@@ -249,9 +261,10 @@ h4 {
 .second-section nav {
   display: flex;
 }
-.second-section ul {
+.second-ul {
   list-style: none;
   padding-left: 70px;
+  text-align: left;
 }
 .second-section h3 {
   color: $main-text-color;
@@ -268,9 +281,6 @@ h4 {
   &:hover {
     border-bottom: 1px solid $main-text-color;
   }
-}
-.magic-ul {
-  padding-right: 70px;
 }
 .second-section div {
   height: 400px;
