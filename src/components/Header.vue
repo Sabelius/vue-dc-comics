@@ -80,7 +80,6 @@ export default {
 
 header{
   display: flex;
-  height: 100px;
 }
 img{
     padding-left: 100px;

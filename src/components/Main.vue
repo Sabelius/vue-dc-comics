@@ -109,9 +109,6 @@ export default {};
 <style lang="scss" scoped>
 @import "../style/variables.scss";
 
-main{
-    height: calc(100% - 100px);
-}
 .main-title-container {
   background-color: $text-color;
   height: 100px;
