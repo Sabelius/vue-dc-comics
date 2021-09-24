@@ -25,8 +25,8 @@
             >
           </li>
           <li>
-            <a href=""
-              ><img
+            <a href="">
+              <img
                 src="../assets/img/buy-comics-subscriptions.png"
                 alt="subs"
               />
@@ -56,40 +56,27 @@
       <nav>
         <ul>
           <h3>DC COMICS</h3>
-          <li><a href="">Characters</a></li>
-          <li><a href="">Comics</a></li>
-          <li><a href="">Movies</a></li>
-          <li><a href="">Tv</a></li>
-          <li><a href="">Games</a></li>
-          <li><a href="">Video</a></li>
-          <li><a href="">News</a></li>
+          <li v-for="(link, index) in links" :key="index">
+            <a>{{ link.text }}</a>
+          </li>
           <ul class="magic-ul">
             <h3>SHOP</h3>
-            <li><a href="">Shop DC</a></li>
-            <li><a href="">Shop DC Collectibles</a></li>
+            <li v-for="(link2, index) in links2" :key="index">
+              <a>{{ link2.text }}</a>
+            </li>
           </ul>
         </ul>
         <ul>
           <h3>DC</h3>
-          <li><a href="">Terms Of Use</a></li>
-          <li><a href="">Privacy Policy(New)</a></li>
-          <li><a href="">ad Choices</a></li>
-          <li><a href="">Advertising</a></li>
-          <li><a href="">Jobs</a></li>
-          <li><a href="">Subscriptions</a></li>
-          <li><a href="">Talent Work Shop</a></li>
-          <li><a href="">CPSC Certificates</a></li>
-          <li><a href="">Ratings</a></li>
-          <li><a href="">Shop Help</a></li>
-          <li><a href="">Contact Us</a></li>
+          <li v-for="(link3, index) in links3" :key="index">
+            <a>{{ link3.text }}</a>
+          </li>
         </ul>
         <ul>
           <h3>SITES</h3>
-          <li><a href="">DC</a></li>
-          <li><a href="">Mad Magazine</a></li>
-          <li><a href="">DC Kids</a></li>
-          <li><a href="">DC Universe</a></li>
-          <li><a href="">DC Power Visa</a></li>
+          <li v-for="(link4, index) in links4" :key="index">
+            <a>{{ link4.text }}</a>
+          </li>
         </ul>
         <div>
           <img
@@ -103,7 +90,146 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Main",
+  data() {
+    return {
+      links: [
+        {
+          text: "CHARACTERS",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "COMICS",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "MOVIES",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "TV",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "GAMES",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "VIDEO",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "NEWS",
+          url: "#",
+          value: "true",
+        },
+      ],
+      links2: [
+        {
+          text: "SHOP DC",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "SHOP DC COLLECTIBLES",
+          url: "#",
+          value: "true",
+        },
+      ],
+      links3: [
+        {
+          text: "Terms Of Use",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "Privacy Policy(New)",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "Ad Choices",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "Advertising",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "Jobs",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "Subscriptions",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "Talent Work Shop",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "CPSC Certificates",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "Ratings",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "Shop Help",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "Contact Us",
+          url: "#",
+          value: "true",
+        },
+      ],
+      links4: [
+        {
+          text: "DC",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "Mad Magazine",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "DC Kids",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "DC Universe",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "DC Power Visa",
+          url: "#",
+          value: "true",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -166,9 +292,9 @@ h4 {
 .magic-ul {
   padding-right: 70px;
 }
-.second-section div{
-    height: 350px;
-    overflow: hidden;
+.second-section div {
+  height: 350px;
+  overflow: hidden;
 }
 .second-section img {
   width: 500px;

@@ -4,8 +4,9 @@
 
     <nav>
       <ul>
-        <li v-for= "(link, index) in links" :key= "index">
-            <a :class= "{hover : link.value}">{{ link.text }}</a></li>
+        <li v-for="(link, index) in links" :key="index">
+          <a :class="{ hover: link.value }">{{ link.text }}</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -13,76 +14,74 @@
 
 <script>
 export default {
-    name: 'Header',
-    data (){
-        return {
-            links: [
-                {
-                    text:"CHARACTERS",
-                    url: "#",
-                    value:"true"
-                },
-                {
-                    text:"COMICS",
-                    url: "#",
-                    value:"true"
-                },
-                {
-                    text:"MOVIES",
-                    url: "#",
-                    value:"true"
-                },
-                {
-                    text:"TV",
-                    url: "#",
-                    value:"true"
-                },
-                {
-                    text:"GAMES",
-                    url: "#",
-                    value:"true"
-                },
-                {
-                    text:"COLLECTIBLES",
-                    url: "#",
-                    value:"true"
-                },
-                {
-                    text:"VIDEOS",
-                    url: "#",
-                    value:"true"
-                },
-                {
-                    text:"FANS",
-                    url: "#",
-                    value:"true"
-                },
-                {
-                    text:"NEWS",
-                    url: "#",
-                    value:"true"
-                },
-                {
-                    text:"SHOPS",
-                    url: "#",
-                    value:"true"
-                },
-            ]
-        }
-    }
+  name: "Header",
+  data() {
+    return {
+      links: [
+        {
+          text: "CHARACTERS",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "COMICS",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "MOVIES",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "TV",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "GAMES",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "COLLECTIBLES",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "VIDEOS",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "FANS",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "NEWS",
+          url: "#",
+          value: "true",
+        },
+        {
+          text: "SHOPS",
+          url: "#",
+          value: "true",
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../style/variables.scss";
 
-
-
-header{
+header {
   display: flex;
 }
-img{
-    padding-left: 100px;
+img {
+  padding-left: 100px;
 }
 
 ul {
@@ -92,15 +91,15 @@ ul {
   padding-top: 40px;
 }
 
-li a{
-    padding: 20px;
-    text-decoration: none;
-    color: $text-color;
+li a {
+  padding: 20px;
+  text-decoration: none;
+  color: $text-color;
 
-    &:hover{
-        color:blue;
-        border-bottom: 3px solid blue;
-        cursor: pointer;
-    }
+  &:hover {
+    color: blue;
+    border-bottom: 3px solid blue;
+    cursor: pointer;
+  }
 }
 </style>
