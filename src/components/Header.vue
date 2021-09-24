@@ -14,7 +14,7 @@
 <script>
 export default {
     name: 'Header',
-    data: function(){
+    data (){
         return {
             links: [
                 {
@@ -74,21 +74,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
+
+
+
 header{
   display: flex;
+}
+img{
+    padding-left: 100px;
 }
 
 ul {
   display: flex;
   list-style: none;
-  padding-left: 700px;
+  padding-left: 400px;
+  padding-top: 40px;
 }
 
 li a{
     padding: 20px;
-    vertical-align: middle;
     text-decoration: none;
-    color: black;
+    color: $text-color;
 
     &:hover{
         color:blue;
