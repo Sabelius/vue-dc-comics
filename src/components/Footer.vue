@@ -1,9 +1,7 @@
 <template>
   <footer>
-    <div>
       <button>SIGN-UP NOW</button>
-    </div>
-    <nav>
+      <nav>
       <ul>
         <h2>FOLLOW US</h2>
         <li v-for="(link, index) in links" :key="index">
@@ -51,16 +49,18 @@ export default {
 
 footer {
   background-color: $text-color;
-  height: 174px;
+  height: 127px;
 }
 div {
   padding: 40px 1200px 0 0;
 }
 button {
   background-color: $text-color;
-  color: white;
+  color: $main-text-color;
   padding: 20px;
   border-color: $main-text-color;
+  margin-right: 1300px;
+  margin-top: 25px;
 
   &:hover {
     border-color: $main-buy-section-color;
@@ -70,7 +70,7 @@ button {
 
 ul {
   display: flex;
-  padding-left: 1200px;
+  padding-left: 1300px;
   margin-bottom: 100px;
 }
 ul h2 {

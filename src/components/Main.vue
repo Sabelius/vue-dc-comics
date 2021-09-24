@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="main-title-container">
-      <h1>-- CONTENT GOES HERE --</h1>
+      <h1>- - CONTENT GOES HERE - -</h1>
     </div>
     <section class="first-section">
       <nav>
@@ -98,133 +98,108 @@ export default {
         {
           text: "CHARACTERS",
           url: "#",
-          value: "true",
         },
         {
           text: "COMICS",
           url: "#",
-          value: "true",
         },
         {
           text: "MOVIES",
           url: "#",
-          value: "true",
         },
         {
           text: "TV",
           url: "#",
-          value: "true",
         },
         {
           text: "GAMES",
           url: "#",
-          value: "true",
         },
         {
           text: "VIDEO",
           url: "#",
-          value: "true",
         },
         {
           text: "NEWS",
           url: "#",
-          value: "true",
         },
       ],
       links2: [
         {
           text: "SHOP DC",
           url: "#",
-          value: "true",
         },
         {
           text: "SHOP DC COLLECTIBLES",
           url: "#",
-          value: "true",
         },
       ],
       links3: [
         {
           text: "Terms Of Use",
           url: "#",
-          value: "true",
         },
         {
           text: "Privacy Policy(New)",
           url: "#",
-          value: "true",
         },
         {
           text: "Ad Choices",
           url: "#",
-          value: "true",
         },
         {
           text: "Advertising",
           url: "#",
-          value: "true",
         },
         {
           text: "Jobs",
           url: "#",
-          value: "true",
         },
         {
           text: "Subscriptions",
           url: "#",
-          value: "true",
         },
         {
           text: "Talent Work Shop",
           url: "#",
-          value: "true",
         },
         {
           text: "CPSC Certificates",
           url: "#",
-          value: "true",
         },
         {
           text: "Ratings",
           url: "#",
-          value: "true",
         },
         {
           text: "Shop Help",
           url: "#",
-          value: "true",
         },
         {
           text: "Contact Us",
           url: "#",
-          value: "true",
         },
       ],
       links4: [
         {
           text: "DC",
           url: "#",
-          value: "true",
         },
         {
           text: "Mad Magazine",
           url: "#",
-          value: "true",
         },
         {
           text: "DC Kids",
           url: "#",
-          value: "true",
         },
         {
           text: "DC Universe",
           url: "#",
-          value: "true",
         },
         {
           text: "DC Power Visa",
           url: "#",
-          value: "true",
         },
       ],
     };
@@ -237,7 +212,7 @@ export default {
 
 .main-title-container {
   background-color: $text-color;
-  height: 100px;
+  height: 120px;
   margin-top: 20px;
 }
 h1 {
@@ -266,10 +241,10 @@ img {
 }
 h4 {
   padding: 30px 0 0 10px;
+  cursor: pointer;
 }
 .second-section {
   background-image: url("../assets/img/footer-bg.jpg");
-  height: 350px;
 }
 .second-section nav {
   display: flex;
@@ -288,12 +263,17 @@ h4 {
 .second-section a {
   text-decoration: none;
   color: $main-second-section-li;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px solid $main-text-color;
+  }
 }
 .magic-ul {
   padding-right: 70px;
 }
 .second-section div {
-  height: 350px;
+  height: 400px;
   overflow: hidden;
 }
 .second-section img {

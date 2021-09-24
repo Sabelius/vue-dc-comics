@@ -79,6 +79,7 @@ export default {
 
 header {
   display: flex;
+  height: 80px;
 }
 img {
   padding-left: 100px;
