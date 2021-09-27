@@ -1,24 +1,34 @@
 <template>
-  <div class="main-title-container">
-    <h1>- - CONTENT GOES HERE - -</h1>
+  <div class="comics-stuff">
+    <img :src="img" alt="" />
+    <h4>{{ series }}</h4>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "mainpart",
+  props: {
+    img: String,
+    series: String,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 @import "../style/variables.scss";
 
-.main-title-container {
-  background-color: $text-color;
-  height: 120px;
-  margin-top: 20px;
-}
-h1 {
-  padding-top: 30px;
-  padding-right: 1250px;
-  color: $main-text-color;
+.comics-stuff {
+  padding: 10px;
+  flex-basis: calc(100% / 6);
+  cursor: pointer;
+
+  img {
+    width: 50%;
+  }
+
+  h4 {
+    color: $main-text-color;
+  }
 }
 </style>
