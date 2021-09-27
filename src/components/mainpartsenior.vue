@@ -12,7 +12,7 @@
 
 <script>
 import mainpart from "./mainpart.vue";
-import json from "./json/dc-comics.json"
+import json from "./json/dc-comics.json";
 
 export default {
   name: "mainpartsenior",
