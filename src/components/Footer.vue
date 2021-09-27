@@ -1,7 +1,7 @@
 <template>
   <footer>
-      <button>SIGN-UP NOW</button>
-     <footerlinks />
+    <button>SIGN-UP NOW</button>
+    <footerlinks />
   </footer>
 </template>
 
@@ -9,9 +9,9 @@
 import footerlinks from "./footerlinks.vue";
 
 export default {
- components: {
-   footerlinks
- }
+  components: {
+    footerlinks,
+  },
 };
 </script>
 
@@ -35,5 +35,4 @@ button {
     cursor: pointer;
   }
 }
-
 </style>
