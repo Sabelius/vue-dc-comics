@@ -1,6 +1,8 @@
 <template>
   <header>
+    <div>
     <img src="../assets/img/dc-logo.png" alt="header-logo" />
+    </div>
 
     <headerlinks />
   </header>
@@ -21,7 +23,7 @@ export default {
 
 header {
   display: flex;
-  height: 80px;
+  height: 110px;
 }
 img {
   padding-left: 100px;
